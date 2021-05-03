@@ -1,12 +1,12 @@
 package greetings
 
 import (
-	"errors"	"fmt"
+	"errors"
+	"fmt"
 )
 
-
 func Hello(name string) (string, error) {
-	if name == ""{
+	if name == "" {
 		return "", errors.New("Empty name!")
 	}
 	message := fmt.Sprintf("Hi, %v. Welcome!", name)
