@@ -15,7 +15,7 @@ func TestHelloName(t *testing.T) {
 	}
 }
 
-func TEstHelloEmpty(t *testing.T) {
+func TestHelloEmpty(t *testing.T) {
 	msg, err := Hello("")
 	if msg != "" || err == nil {
 		t.Fatalf(`Hello("") = %q, %v, want "", error`, msg, err)
